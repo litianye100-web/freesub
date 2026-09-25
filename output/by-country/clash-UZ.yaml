@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
-  server: 104.25.155.45
+  server: 172.67.210.146
   port: 443
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '/stream/PANEL_ZEUS/4eef5adc237a/loc-1 '
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
     headers:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - xiaohe

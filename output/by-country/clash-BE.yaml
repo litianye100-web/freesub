@@ -27,9 +27,20 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: '/sync '
     headers:
       Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
+  server: 172.67.155.136
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000008
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
 rules:
 - MATCH,PROXIES
