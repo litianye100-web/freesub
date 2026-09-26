@@ -10,9 +10,9 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: hinet1.2yly.com
+  server: 118.167.230.191
   port: 24215
   udp: true
   type: vless
@@ -21,7 +21,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
