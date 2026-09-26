@@ -16,7 +16,7 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: 50.7.5.187
   port: 443
@@ -26,7 +26,8 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: ireland-new-ded1.failspace.top
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
