@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -41,7 +41,7 @@
       "tls": {
         "enabled": true,
         "server_name": "filesconvert.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
