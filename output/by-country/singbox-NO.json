@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "46.29.238.72",
+      "server_port": 443,
+      "uuid": "d3aeadf0-94bd-46bd-88f5-ed920a3449fd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "no.netgridflow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg",
+          "short_id": "bbe7cea59ba5fc76"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
       "server": "185.213.23.63",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -13,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
+      "tag": "🇳🇴 挪威 (Norway) 03 - xiaohe",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -37,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe"
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ]
     },
     {
@@ -45,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
-        "🇳🇴 挪威 (Norway) 02 - xiaohe"
+        "🇳🇴 挪威 (Norway) 02 - xiaohe",
+        "🇳🇴 挪威 (Norway) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
