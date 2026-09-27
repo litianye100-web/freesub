@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.19.35.170
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
-  uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
   tls: true
-  servername: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
+  servername: server9.9966338.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vl/zXLTmz3hE3szn64f?ed=2560
+    path: /imnotarealherox
     headers:
-      Host: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
