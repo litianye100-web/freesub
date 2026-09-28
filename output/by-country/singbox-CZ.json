@@ -6,34 +6,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "194.87.59.19",
-      "server_port": 2085,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "3e43ffd1-3f7b-45b0-a955-c249010c7ebc",
+      "tls": {
+        "enabled": true,
+        "server_name": "open-39.avl-a47261.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "153.76.185.152",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "153.76.185.86",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/vl/y6cRFgRcPee84kGEoiCrOgEQoh?ed=2560",
+        "headers": {
+          "Host": "open-39.avl-a47261.workers.dev"
+        }
       }
     },
     {
@@ -41,18 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
