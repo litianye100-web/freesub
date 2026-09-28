@@ -5,20 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: www.speedtest.net
-  port: 443
+  server: 153.76.185.147
+  port: 3090
   udp: true
   type: vless
-  uuid: 3e43ffd1-3f7b-45b0-a955-c249010c7ebc
-  tls: true
-  servername: open-39.avl-a47261.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/y6cRFgRcPee84kGEoiCrOgEQoh?ed=2560
-    headers:
-      Host: open-39.avl-a47261.workers.dev
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
