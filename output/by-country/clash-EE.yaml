@@ -5,14 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 94.183.170.135
-  port: 443
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.147
   port: 8443
@@ -29,14 +28,42 @@ proxies:
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 94.183.170.65
+  server: 94.183.170.135
   port: 443
   udp: true
-  type: hysteria2
-  password: e60bc99b-6630-4799-af84-f90ebdc643b6
-  sni: hys2.arkonsoft.top
-  skip-cert-verify: false
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 179.254.126.173
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7013d889-14f4-4475-a5ff-a5ecd992b522
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 212.113.120.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gjdfyCCn9DXEzaAmN-geTg1sCvVj1WEwuhmgXIReR1E
+    short-id: f932c14eee8ef133
+  servername: lk.x5.ru
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -46,50 +73,6 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 93.89.220.7
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
-  tls: true
-  reality-opts:
-    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
-    short-id: b3a1cc510a2001c6
-  servername: eh.vk.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 5.181.201.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  servername: est1.loozerp.wiki
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: 94.183.170.65
-  port: 8081
-  udp: true
-  type: vless
-  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
-  network: ws
-  ws-opts:
-    path: /ws/generate
-    headers:
-      Host: hys2.arkonsoft.top
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +84,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,7 +95,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

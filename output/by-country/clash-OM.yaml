@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
-  server: 157.137.224.224
-  port: 62145
+- name: 🇴🇲 OM 01 - xiaohe
+  server: 130.94.81.180
+  port: 18415
   udp: true
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  type: ss
+  cipher: aes-128-gcm
+  password: b667234b8d2e7eb34444857ea3a9b18a
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 rules:
 - MATCH,PROXIES

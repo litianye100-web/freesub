@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
   server: 140.238.2.250
   port: 443
   udp: true
@@ -12,50 +19,31 @@ proxies:
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: 141.164.45.187
-  port: 9090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: 141.164.45.187
-  port: 8008
+  server: 132.145.80.230
+  port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: 131.186.19.174
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  server: 47.80.14.8
-  port: 443
+  server: 3.39.4.109
+  port: 13672
   udp: true
   type: vless
-  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
-    short-id: 71110d3f7ef57760
-  servername: www.samsung.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -68,42 +56,28 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
-  server: 211.178.105.134
-  port: 6123
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  server: 61.111.247.80
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  server: 47.80.14.8
   port: 443
   udp: true
   type: vless
-  uuid: 82C94E17-B27E-4356-82C1-2F9C79B0CF6D
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Cn5_Bic3VFQ2ONvH5_npnbMYZ-oxkl4BxawPKxoRdCQ
-    short-id: f8f2875b3b4cb65b
-  servername: gateway.icloud.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  server: kr2-r.link-t7.com
-  port: 10047
-  udp: true
-  type: vless
-  uuid: 58C828CD-3EBA-46F9-B297-16003D7A6E68
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  servername: www.samsung.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   server: 61.111.247.22
   port: 443
   udp: true
@@ -116,49 +90,35 @@ proxies:
     short-id: 0d9954fe36197887
   servername: gateway.icloud.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
-  server: 132.226.226.189
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  server: 152.70.237.123
+  port: 2053
   udp: true
   type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
+  sni: t.me
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  server: 61.111.247.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 82C94E17-B27E-4356-82C1-2F9C79B0CF6D
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: upzGwN_6mF1HLEIWveelchmljBlEL1fTNNJryHP1h0Q
-    short-id: 57a9322ca488758c
-  servername: gateway.icloud.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -166,7 +126,7 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
   server: vpn-kr-002.fastervpn.world
   port: 443
   udp: true
@@ -174,46 +134,14 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
-  server: 43.108.9.116
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  server: 131.186.19.174
+  port: 50160
   udp: true
-  type: vless
-  uuid: 5c9884a1-b641-4299-82ac-fc62da2327a7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vHl4olGSvL-LqhD2-yclHQWTupy6w02lSp3q8WVUUAU
-    short-id: cd6caa470bec865e
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
-  server: 43.108.59.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: 14a63fc7-d415-4a81-8338-cfd06c0984de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ve9BJ1dUCdKh3kV4W1Df78AXveg2Ziyh5_ClDMYhaEQ
-    short-id: 137866fd9d22d203
-  servername: www.logitech.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
-  server: 141.164.45.187
-  port: 8000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: 🇰🇷 韩国 (South Korea) 21 - xiaohe
-  server: 141.164.45.187
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: hysteria2
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -233,13 +161,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
   - 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 20 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 21 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -259,12 +180,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
   - 🇰🇷 韩国 (South Korea) 14 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 20 - xiaohe
-  - 🇰🇷 韩国 (South Korea) 21 - xiaohe
 rules:
 - MATCH,PROXIES
