@@ -13,10 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: 51.75.67.209
+  server: free.sahanwickramasinghe.me
   port: 443
   udp: true
   type: vless
@@ -24,7 +22,7 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

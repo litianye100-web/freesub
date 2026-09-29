@@ -15,17 +15,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
@@ -39,25 +39,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9094,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
@@ -68,16 +68,8 @@
       "password": "hbtvgUz5uNYyB3Rf"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9034,
-      "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
       "server": "31.57.28.147",
       "server_port": 443,
       "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
@@ -87,7 +79,7 @@
         "server_name": "download-cdn.jetbrains.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -95,6 +87,14 @@
           "short_id": "7a18a196e730e1d5"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
     },
     {
       "type": "vless",
@@ -108,7 +108,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -120,6 +120,47 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe",
+      "server": "latvia-3.kochvpn.pw",
+      "server_port": 443,
+      "uuid": "8de0e6f4-d365-fa64-d5ba-eed9ea513e06",
+      "tls": {
+        "enabled": true,
+        "server_name": "latvia-3.kochvpn.pw",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe",
+      "server": "193.163.203.199",
+      "server_port": 443,
+      "uuid": "3e2591b2-4739-4c59-b540-344f0b6505ac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "x6.megabitvpn.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xa2v36oJSdYGM1SSiMYyehw9RTdlBHOLcE5-YOK6unE",
+          "short_id": "3c7ab85b281ecc8f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe",
       "server": "104.252.19.114",
       "server_port": 8443,
       "uuid": "40cba749-bca9-4089-9c02-84a357244ce0",
@@ -135,27 +176,6 @@
           "enabled": true,
           "public_key": "cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI",
           "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe",
-      "server": "193.163.203.199",
-      "server_port": 443,
-      "uuid": "3e2591b2-4739-4c59-b540-344f0b6505ac",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "x6.megabitvpn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xa2v36oJSdYGM1SSiMYyehw9RTdlBHOLcE5-YOK6unE",
-          "short_id": "3c7ab85b281ecc8f"
         }
       }
     },
@@ -176,7 +196,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe"
       ]
     },
     {
@@ -195,7 +216,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
