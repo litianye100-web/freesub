@@ -6,48 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "104.16.72.101",
-      "server_port": 80,
-      "uuid": "d5598622-46b8-b017-3af3-232500000001",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "nahan-core.netizo09.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "77.83.247.207",
-      "server_port": 18285,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "179.254.109.54",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-0003-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cosw.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "45.149.147.97",
       "server_port": 443,
       "uuid": "f28e0ce1-ed75-4e90-b069-5215a80dfb4a",
@@ -57,7 +15,7 @@
         "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -68,22 +26,61 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "212.147.245.198",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "smart.avenone.ir",
+      "server_port": 1085,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "65.109.28.164",
       "server_port": 443,
-      "uuid": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "online.1c.ru",
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
-          "short_id": "330a464a00000000"
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
         }
       }
     },
@@ -99,7 +96,7 @@
         "server_name": "images.unsplash.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -120,7 +117,7 @@
         "server_name": "144.31.27.215",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -132,20 +129,23 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 08 - xiaohe",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "server": "2.27.13.61",
+      "server_port": 2096,
+      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "st6dbbc.rumedia-cdn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st6dbbc.rumedia-cdn.com"
         }
       }
     },
@@ -160,7 +160,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -170,15 +170,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 10 - xiaohe",
-      "server": "144.31.212.253",
+      "server": "138.124.17.179",
       "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "uuid": "ca5ffe64-81e0-42f0-a136-03cc4f662a4f",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
+        "server_name": "finewl1.krusofiya.fun",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eqlfwoHUoRvNeOKYzCzHSV64rSzyUVGS2w_nsOpWIG4",
+          "short_id": "ffdf2e6056999b66"
+        }
       }
     },
     {
@@ -193,56 +201,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "vless-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 12 - xiaohe",
-      "server": "65.109.28.164",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 13 - xiaohe",
-      "server": "2.27.13.61",
-      "server_port": 2096,
-      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
-      "tls": {
-        "enabled": true,
-        "server_name": "st6dbbc.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st6dbbc.rumedia-cdn.com"
-        }
       }
     },
     {
@@ -260,9 +224,7 @@
         "🇫🇮 芬兰 (Finland) 08 - xiaohe",
         "🇫🇮 芬兰 (Finland) 09 - xiaohe",
         "🇫🇮 芬兰 (Finland) 10 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 11 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 12 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 13 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 11 - xiaohe"
       ]
     },
     {
@@ -279,9 +241,7 @@
         "🇫🇮 芬兰 (Finland) 08 - xiaohe",
         "🇫🇮 芬兰 (Finland) 09 - xiaohe",
         "🇫🇮 芬兰 (Finland) 10 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 11 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 12 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 13 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
