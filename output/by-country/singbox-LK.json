@@ -16,7 +16,7 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe",
-      "server": "free.sahanwickramasinghe.me",
+      "server": "51.75.67.209",
       "server_port": 443,
       "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
       "tls": {
@@ -25,7 +25,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
