@@ -15,7 +15,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -25,46 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "104.21.36.36",
-      "server_port": 443,
-      "uuid": "41750e18-7143-49a3-bdac-4edcb3c8b8f3",
-      "tls": {
-        "enabled": true,
-        "server_name": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560",
-        "headers": {
-          "Host": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
