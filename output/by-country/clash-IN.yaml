@@ -28,13 +28,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 34.131.228.210
+  server: 148.113.5.44
   port: 443
   udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 172.105.39.124
   port: 7002

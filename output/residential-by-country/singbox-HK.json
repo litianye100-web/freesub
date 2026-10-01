@@ -6,25 +6,28 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+      "server": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+        "server_name": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com",
-        "insecure": true
+      "server": "az-1.linkaa.xyz",
+      "server_port": 53110,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/game/resources",
+        "headers": {
+          "Host": "az-1.linkaa.xyz"
+        }
       }
     },
     {

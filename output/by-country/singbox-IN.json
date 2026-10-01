@@ -36,15 +36,24 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "34.131.228.210",
+      "server": "148.113.5.44",
       "server_port": 443,
-      "password": "M7v%w11Se*",
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
       }
     },
     {

@@ -6,13 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "93.190.9.35",
-      "server_port": 3090,
-      "uuid": "eb95d26f-2200-4780-9986-cc4960c665f2",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "server": "109.230.196.66",
+      "server_port": 208,
+      "uuid": "8d89622f-3150-424e-8446-06866a3d6b66"
     },
     {
       "type": "vless",
@@ -26,7 +22,7 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -38,6 +34,13 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "145.239.30.17",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -58,7 +61,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -67,7 +70,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -77,31 +80,19 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
-      "server": "145.239.30.17",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
-      "server": "tr2.gigobingo.ru",
-      "server_port": 443,
-      "uuid": "46e62b9b-f9db-4310-8f18-7d6e449cfd5c",
-      "flow": "xtls-rprx-vision",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "tr2.gigobingo.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ",
-          "short_id": "ef7c4e4302bd52d7"
-        }
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {

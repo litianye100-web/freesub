@@ -10,7 +10,8 @@
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -22,7 +23,11 @@
       "tls": {
         "enabled": true,
         "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
