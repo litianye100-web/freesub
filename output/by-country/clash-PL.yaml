@@ -12,82 +12,13 @@ proxies:
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 217.30.10.44
-  port: 9095
+  server: 94.228.161.7
+  port: 4
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  cipher: chacha20-ietf-poly1305
+  password: MBiJEJ5VgZXVSj58CEEFZA
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 70.34.255.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 95.85.253.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
-  servername: pl0001.kubservice.icu
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 144.31.4.193
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 2.59.253.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 149.86.227.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: waypoint.connectserverix.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 95.85.227.241
   port: 443
   udp: true
@@ -100,7 +31,28 @@ proxies:
     short-id: 25934afbedc65791
   servername: proxy3d.h1guro.ovh
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 95.85.253.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4314a583-3a39-45e1-883e-70bf570d252a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
+  servername: pl0001.kubservice.icu
+  client-fingerprint: edge
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 34.118.43.106
   port: 443
   udp: true
@@ -111,41 +63,34 @@ proxies:
     public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
     short-id: 7e7623474d41f032
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
-  server: 83.168.107.220
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: 149.86.227.200
   port: 443
   udp: true
   type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
+  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
-  servername: google.com
+    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
+    short-id: 9e15546f267baa64
+  servername: waypoint.connectserverix.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 12 - xiaohe
-  server: 202.78.163.237
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  server: 144.31.131.38
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 13 - xiaohe
-  server: 31.77.13.19
-  port: 2063
-  udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 14 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 82.118.22.161
   port: 443
   udp: true
@@ -157,20 +102,81 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 15 - xiaohe
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 10 - xiaohe
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 11 - xiaohe
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 12 - xiaohe
   server: 83.168.95.145
   port: 443
   udp: true
   type: vless
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
     short-id: d345ad4657adeef9
   servername: google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 13 - xiaohe
+  server: 83.168.107.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
+    short-id: c56d4f1c
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 14 - xiaohe
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 15 - xiaohe
+  server: 31.77.13.19
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: edge
 - name: 🇵🇱 波兰 (Poland) 16 - xiaohe
   server: 150.251.113.34
   port: 443
@@ -185,18 +191,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 17 - xiaohe
-  server: 188.114.96.19
-  port: 80
+  server: scrap.halyvanedorogo.ru
+  port: 35076
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 18 - xiaohe
   server: pl3.moritech.net
   port: 443
@@ -207,22 +208,7 @@ proxies:
   tls: true
   servername: pl3.moritech.net
   skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 19 - xiaohe
-  server: 45.132.177.72
-  port: 9844
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -246,7 +232,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 16 - xiaohe
   - 🇵🇱 波兰 (Poland) 17 - xiaohe
   - 🇵🇱 波兰 (Poland) 18 - xiaohe
-  - 🇵🇱 波兰 (Poland) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -270,6 +255,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 16 - xiaohe
   - 🇵🇱 波兰 (Poland) 17 - xiaohe
   - 🇵🇱 波兰 (Poland) 18 - xiaohe
-  - 🇵🇱 波兰 (Poland) 19 - xiaohe
 rules:
 - MATCH,PROXIES
