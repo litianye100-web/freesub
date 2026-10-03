@@ -5,23 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 218.250.216.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: b08d347f-tmm5c0-tu0ezx-1m7l4.hk3.hyhuawei.com
+  server: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: bd515574-3b10-11ee-ac14-f23c9164ca5d
-  sni: b08d347f-tmm5c0-tu0ezx-1m7l4.hk3.hyhuawei.com
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: e86088da-tmm5c0-tqbai3-1hpo0.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  server: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
