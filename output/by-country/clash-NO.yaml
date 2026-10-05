@@ -4,32 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇶 AQ 01 - xiaohe
-  server: 2.27.26.132
-  port: 444
+- name: 🇳🇴 挪威 (Norway) 01 - xiaohe
+  server: 46.29.238.88
+  port: 40443
   udp: true
   type: vless
-  uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
   tls: true
   reality-opts:
-    public-key: dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k
-    short-id: d7abeb515312dc2f
-  servername: apple.com
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+    short-id: f7b2
+  servername: deepl.com
   client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: apple.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇶 AQ 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇶 AQ 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 01 - xiaohe
 rules:
 - MATCH,PROXIES
