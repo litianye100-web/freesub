@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
+  server: 34.131.228.210
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 65.20.80.141
   port: 443
   udp: true
@@ -16,13 +24,19 @@ proxies:
     public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
   servername: googleapis.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 103.194.228.102
-  port: 4443
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: f247f7e4-04bb-48a5-828d-b8e75ec4c3af
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -41,6 +55,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +64,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 rules:
 - MATCH,PROXIES
