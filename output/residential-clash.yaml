@@ -4,52 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: 61fcbdcb-1bea-4ba7-a8af-51302b6cf87e
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 45.192.201.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
-  tls: true
-  servername: argo6.5671234.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-- name: 🇦🇹 奥地利 (Austria) 03 (家宽) - xiaohe
-  server: 31.77.227.6
-  port: 52006
-  udp: true
-  type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 116.49.85.111
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  sni: 9358b4b1-tmveo0-u6l8xy-g43g.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   server: sbgfgov.vip24.wogacnmnagfwgov.com
   port: 11224
@@ -63,20 +49,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

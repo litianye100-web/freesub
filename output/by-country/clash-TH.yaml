@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.10.9
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless
@@ -38,6 +38,13 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
   udp: true
@@ -54,6 +61,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +71,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
   - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,41 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 206.1.103.221
-  port: 42264
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: Rzv4KXTXvFEqeALuBgzETlujcXrzIAsrSMAevky5x8c=:hdA4n/xn83dcbzxCAxapim47QxGlbAUPQ8I1rbC2RN8=
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 206.1.103.221
-  port: 17390
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 4zo9pQzwxsh1bMeReRoD/Ma2N3ZKvTJ6gZRhRcOGtzU=:5bsD1WmoheBbkMn4uYAa3A3ERVpjp3CRyYylrTg4sg8=
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: netork.povrak.ir
-  port: 37523
-  udp: true
-  type: vmess
-  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 85.192.48.142
   port: 443
   udp: true
@@ -52,18 +17,43 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 78.135.73.47
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 13.143.137.169
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: 38.180.209.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cloud.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +63,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,7 +72,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES
